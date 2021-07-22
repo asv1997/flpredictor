@@ -1,6 +1,28 @@
-# Flpredictor
+# FLPredictor
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+
+This app will let the users predict how the league table will look at the end of each season for their favorite footballing league and share it with their friends.
+
+URL of the site : http://flpredictor.netlify.app
+
+## Feautures
+
+1. Users will have the option of to choose any one of the three listed league (English League, Italian League, French League).
+2. Users can then predict  how the league will finish by rearranging the teams with the help of the drag and drop feautre.
+3. The final league table can be downloaded as an image file and the users can share it with their friends.
+
+
+## Project Details
+
+1. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+2. Semantic ui library is used for styling.
+3. CDK drag and drop library is used for the drag and drop feauture.
+4. file-saver and dom-to-image library is used for converting the league table to an image file and enabling the users to download it.
+
+## Contributing Details
+
+Everyone is welcome to add a new feauture, fix a bug and optimise the code.
 
 ## Development server
 
