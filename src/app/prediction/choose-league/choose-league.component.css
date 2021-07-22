@@ -1,0 +1,76 @@
+.main-container{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(../../../assets/images/prediction-background2.jpg);
+  background-size: cover;
+  background-position: top;
+  overflow: auto;
+}
+
+
+.sub-navigation{
+    margin-top: 41px;
+}
+
+.icon{
+  color: white;
+}
+
+.section{
+  font-size: clamp(14px,4vw,18px);
+  cursor: pointer;
+  color: white;
+}
+
+.angle{
+  font-size: clamp(14px,4vw,18px);
+}
+
+.active{
+  text-decoration: underline;
+}
+
+.name-container{
+  margin-top: 41px;
+}
+
+
+
+h3{
+  font-size: clamp(12px,4vw,18px);
+}
+
+.label{
+  color: white;
+}
+
+.radio{
+  font-size: clamp(11px,3vw,14px);
+}
+
+.input{
+  width: 250px;
+  border-bottom: 1px solid #899499;
+  height: 30px;
+  color: white !important;
+}
+
+.input:focus{
+  color: white !important;
+}
+
+.error-text{
+  color: white;
+  font-size: clamp(10px,3vw,13px);
+}
+
+.league-container{
+  margin-top: 41px;
+}
+
+.field{
+  margin-top: 50px;
+}
+
+
+

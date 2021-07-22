@@ -1,0 +1,99 @@
+<div class="main-container">
+  <app-header></app-header>
+  <div class="ui container">
+
+    <div class="sub-navigation">
+      <div class="ui big breadcrumb">
+        <div  routerLink="/prediction/chooseLeague" class="section">Step 1</div>
+        <i class="angle right icon"></i>
+        <div routerLink="/prediction/predict" class="section">Step 2</div>
+        <i class="angle right icon"></i>
+        <div class="active section">Step 3</div>
+      </div>
+    </div>
+
+    <div class="title">
+      <h3  class="label">
+        <u (click)="download()" style="margin-right: 4px;cursor: pointer;">Click here</u> to download your prediction and share it with your friends
+      </h3>
+    </div>
+
+    <div class="content-container">
+      <!-- <div id="prediction" class="table-container">
+        <div class="sub-title">
+          <h4 class="label">
+          {{league.leagueName}} - 21/22
+          </h4>
+        </div>
+        <div class="user-details">
+          <h4 class="label">
+            {{'Vignesh'}} - {{date | date: 'dd/MM/yyyy'}}
+            </h4>
+        </div>
+        <div id="table" class="table">
+          <div class="table-row">
+            <div class="table-column">
+              <h5 class="label">
+                Position
+              </h5>
+            </div>
+            <div class="table-column">
+              <h5 class="label">
+                Team
+              </h5>
+            </div>
+          </div>
+          <div class="team-container">
+            <div *ngFor="let team of table; let i = index" class="table-row team">
+              <div class="table-column">
+                <h5 class="label">
+                  {{i+1}}
+                </h5>
+              </div>
+              <div class="table-column-team">
+                <div class="club-icon-container">
+                  <img alt="club-icon" class="club-icon" [src]="'../../../assets/images/'+(leagueId)+'/'+team.id+'.png'">
+                </div>
+                <div class="club-name-container">
+                  <h5 class="label">
+                    {{team.name}}
+                  </h5>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+       </div> -->
+
+       <div id="table-container" class="table-container">
+         <div class="general-details">
+         <span class="name">
+          Prediction by : <i>{{name}}</i>
+         </span>
+         <br>
+                   <span class="league">
+            {{league.leagueName}} -2021/2022
+          </span>
+
+         </div>
+         <div class="prediction-details">
+           <div *ngFor="let team of table; let i = index" class="table-row">
+             <div class="position"><span>{{i+1}}.</span></div>
+             <div class="team-detail">
+              <div class="club-icon-container"><img class="club-icon"  [src]="'../../../assets/images/'+(leagueId)+'/'+team.id+'.png'"></div>
+              <div class="club-name-container"><span class="club-name">{{team.name}}</span></div>
+             </div>
+
+           </div>
+         </div>
+
+       </div>
+
+
+
+
+    </div>
+</div>
+

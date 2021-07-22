@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'semantic-ui-css/semantic.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* Uncomment the below code for ui debugging */
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+

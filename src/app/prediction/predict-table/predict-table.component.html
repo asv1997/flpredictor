@@ -1,0 +1,72 @@
+<div class="main-container">
+  <app-header></app-header>
+  <div class="ui container">
+    <div class="sub-navigation">
+      <div class="ui big breadcrumb">
+        <div routerLink="/prediction/chooseLeague" routerLinkActive="router-link-active"  class="section">Step 1</div>
+        <i class="angle right icon"></i>
+        <div class="active section">Step 2</div>
+        <i class="angle right icon"></i>
+        <div class="section">Step 3</div>
+      </div>
+    </div>
+
+    <div class="title">
+      <h3  class="label">
+        Drag and drop the team at the position where you think they will finish
+      </h3>
+    </div>
+
+    <div class="content-container">
+
+
+
+
+    <div class="table-container">
+      <div class="sub-title">
+        <h4 class="label">
+         {{league.leagueName}} - 2021/2022
+        </h4>
+      </div>
+      <div class="table">
+        <div class="table-row">
+          <div class="table-column">
+            <h5 class="label">
+              Position
+            </h5>
+          </div>
+          <div class="table-column">
+            <h5 class="label">
+              Team
+            </h5>
+          </div>
+        </div>
+        <div class="team-container" (cdkDropListDropped)="drop($event)" cdkDropList>
+          <div *ngFor="let team of table; let i = index" class="table-row team" cdkDrag>
+            <div class="table-column">
+              <h5 class="label">
+                {{i+1}}
+              </h5>
+            </div>
+            <div class="table-column-team">
+              <div class="club-icon-container">
+                <img alt="club-icon" class="club-icon" [src]="'../../../assets/images/'+(leagueId)+'/'+team.id+'.png'">
+              </div>
+              <div class="club-name-container">
+                <h5 class="label">
+                  {{team.name}}
+                </h5>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button (click)="submit()" class="positive ui button submit">Submit</button>
+    </div>
+
+
+
+  </div>
+</div>

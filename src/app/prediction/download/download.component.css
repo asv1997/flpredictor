@@ -1,0 +1,160 @@
+.main-container{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(../../../assets/images/prediction-background2.jpg);
+  background-size: cover;
+  background-position: top;
+  overflow: auto;
+}
+
+.sub-navigation{
+  margin-top: 41px;
+}
+
+.icon{
+  color: white;
+}
+
+.section{
+  font-size: clamp(14px,4vw,18px);
+  cursor: pointer;
+  color: white;
+}
+
+.angle{
+  font-size: clamp(14px,4vw,18px);
+}
+
+h3{
+  font-size: clamp(12px,4vw,18px);
+}
+
+h4{
+  font-size: clamp(12px,2.5vw,14px);
+}
+
+
+
+h5{
+  font-size: clamp(11.5px,2vw,14px);
+}
+
+.active{
+  text-decoration: underline;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 100px;
+
+}
+
+
+.title{
+  margin-top: 41px;
+}
+
+.label{
+  color: white;
+}
+
+
+ .table-container{
+
+   min-height: 400px;
+   width: 90%;
+   padding: 20px 10px 10px 20px;
+   background-color: #FF3CAC;
+   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+   border-radius: 20px;
+ }
+
+  .general-details{
+    color: white;
+
+  }
+
+  .name{
+    word-wrap: break-word;
+    width: 60%;
+  }
+
+  .league{
+    margin-top: 15px;
+  }
+
+
+  .prediction-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: small;
+}
+
+.table-row{
+  height: 30px;
+  width: 80%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 14px;
+}
+
+
+
+.position{
+  margin-right: 23px;
+  width: 30%;
+  color: white;
+}
+
+.team-detail{
+  color: white;
+ display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.club-icon{
+  height: 14px;
+  width: 14px;
+  margin-right: 14px;
+}
+
+.club-name-container{
+  width: 100%;
+}
+
+@media only screen and (min-width: 670px) {
+  .table-container{
+    display: flex;
+    min-height: 400px;
+   width: 90%;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+   }
+
+   .general-details{
+     display: flex;
+     flex-direction: column;
+    padding-left: 40px;
+     justify-content: center;
+     width: 50%;
+     color: white;
+   }
+
+
+
+
+}

@@ -1,0 +1,56 @@
+<div class="main-container">
+  <app-header></app-header>
+  <div class="ui container">
+
+    <div class="sub-navigation">
+      <div class="ui big breadcrumb">
+        <div class="active section">Step 1</div>
+        <i class="angle right icon"></i>
+        <div class="section">Step 2</div>
+        <i class="angle right icon"></i>
+        <div class="section">Step 3</div>
+      </div>
+    </div>
+
+    <div class="content-container">
+       <div class="name-container">
+         <h3 class="label">
+            Please enter your name
+         </h3>
+         <div class="ui transparent input">
+          <input (input)="displayErrorText=false" [(ngModel)]="name" class="input" type="text" placeholder="Your name...">
+        </div>
+        <div *ngIf="displayErrorText" style="margin-top: 5px;">
+          <span class="error-text">*Please enter a valid name</span>
+        </div>
+       </div>
+       <div class="league-container">
+        <h3 class="label">
+           Pick a League
+        </h3>
+
+
+        <div class="ui form">
+          <div  class="inline fields">
+            <div *ngFor="let item of leagues" class="field">
+              <div  (click)="setLeague(item.leagueId)" class="ui radio checkbox">
+                <input [checked]="league === item.leagueId ? true : false"  type="radio"  tabindex="0" class="hidden">
+                <label style="color: white !important;">{{item.leagueName}}</label>
+              </div>
+            </div>
+
+          </div>
+
+          <button (click)="onProceedClick()" style="margin-top: 32px;" class="positive ui button">Proceed</button>
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
