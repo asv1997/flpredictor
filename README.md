@@ -1,10 +1,10 @@
-# FLPredictor
+# FLPredictor ⚽
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
 This app will let the users predict how the league table will look at the end of each season for their favorite footballing league and share it with their friends.
 
-URL of the site : http://flpredictor.netlify.app
+URL of the site : http://flpredictor.netlify.app ⚽⚽
 
 ## Feautures
 
@@ -22,7 +22,7 @@ URL of the site : http://flpredictor.netlify.app
 
 ## Contributing Details
 
-Everyone is welcome to add a new feauture, fix a bug and optimise the code.
+Everyone is welcome to add a new feauture, fix a bug and optimise the code. ❤
 
 ## Development server
 
