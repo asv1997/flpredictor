@@ -23,9 +23,9 @@ export class DownloadComponent implements OnInit {
 
    //to ensure that the user cant directly access the page without using the choose-league component
    this.name = this.predictionService.getName();
-    // if(this.name==="" || this.name.length ==0){
-    //   router.navigateByUrl("/")
-    // }
+    if(this.name==="" || this.name.length ==0){
+      router.navigateByUrl("/")
+    }
 
     this.isDownloading = 0;
     this.date = new Date();
