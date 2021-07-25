@@ -16,66 +16,35 @@
       <h3  class="label">
         <u (click)="download()" style="margin-right: 4px;cursor: pointer;">Click here</u> to download your prediction and share it with your friends
       </h3>
+      <div class="loader-container">
+        <div *ngIf="isDownloading==1" class="ui active progress">
+          <div class="bar" style="width: 32%;">
+            <div class="progress"></div>
+          </div>
+          <div style="margin-top: 10px;" class="label"><span style="color: white;">Your download is getting ready</span></div>
+        </div>
+        <div  *ngIf="isDownloading==2" class="ui progress success">
+          <div class="bar" style="width: 100%">
+            <div class="progress"></div>
+          </div>
+          <div style="margin-top: 10px;" class="label"><span style="color: white;">Your file is ready</span>.</div>
+        </div>
+      </div>
+
     </div>
 
     <div class="content-container">
-      <!-- <div id="prediction" class="table-container">
-        <div class="sub-title">
-          <h4 class="label">
-          {{league.leagueName}} - 21/22
-          </h4>
-        </div>
-        <div class="user-details">
-          <h4 class="label">
-            {{'Vignesh'}} - {{date | date: 'dd/MM/yyyy'}}
-            </h4>
-        </div>
-        <div id="table" class="table">
-          <div class="table-row">
-            <div class="table-column">
-              <h5 class="label">
-                Position
-              </h5>
-            </div>
-            <div class="table-column">
-              <h5 class="label">
-                Team
-              </h5>
-            </div>
-          </div>
-          <div class="team-container">
-            <div *ngFor="let team of table; let i = index" class="table-row team">
-              <div class="table-column">
-                <h5 class="label">
-                  {{i+1}}
-                </h5>
-              </div>
-              <div class="table-column-team">
-                <div class="club-icon-container">
-                  <img alt="club-icon" class="club-icon" [src]="'../../../assets/images/'+(leagueId)+'/'+team.id+'.png'">
-                </div>
-                <div class="club-name-container">
-                  <h5 class="label">
-                    {{team.name}}
-                  </h5>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-       </div> -->
-
        <div id="table-container" class="table-container">
          <div class="general-details">
          <span class="name">
-          Prediction by : <i>{{name}}</i>
+          Prediction by : <i>Vignesh{{name}}</i>
          </span>
          <br>
                    <span class="league">
             {{league.leagueName}} -2021/2022
           </span>
+          <br>
+         <span class="site-link">www.flpredictor.netlify.app</span>
 
          </div>
          <div class="prediction-details">

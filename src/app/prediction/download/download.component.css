@@ -88,6 +88,10 @@ h5{
     margin-top: 15px;
   }
 
+  .site-link{
+    margin-top: 10px;
+  }
+
 
   .prediction-details{
     display: flex;
@@ -136,6 +140,18 @@ h5{
   width: 100%;
 }
 
+.loader-container{
+  margin-top: 25px;
+}
+
+.loader{
+  margin-bottom: -25px;
+}
+
+.progress{
+  width: 100%;
+}
+
 @media only screen and (min-width: 670px) {
   .table-container{
     display: flex;
@@ -153,6 +169,14 @@ h5{
      width: 50%;
      color: white;
    }
+
+   .league{
+    margin-top: 20px;
+  }
+
+  .site-link{
+    margin-top: 20px;
+  }
 
 
 
