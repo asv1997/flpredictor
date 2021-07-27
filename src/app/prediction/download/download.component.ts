@@ -5,6 +5,7 @@ import domtoimage from 'dom-to-image'
 import {saveAs} from 'file-saver'
 
 
+
 @Component({
   selector: 'app-download',
   templateUrl: './download.component.html',
@@ -20,18 +21,45 @@ export class DownloadComponent implements OnInit {
   isDownloading:number;
 
   constructor(private predictionService: PredictionService, private router : Router) {
+    let nameCheck = this.predictionService.getName();
+     //to ensure that the user cant directly access the page without choosing the name and a league
+     if(nameCheck==="" || nameCheck.length ==0){
 
-   //to ensure that the user cant directly access the page without using the choose-league component
-   this.name = this.predictionService.getName();
-    if(this.name==="" || this.name.length ==0){
-      router.navigateByUrl("/")
+      if(localStorage.length == 0){
+        router.navigateByUrl("/")
+      }
+      else{
+
+        //retrieving info from browser local storage
+
+        this.predictionService.setLeagueId(parseInt(localStorage.getItem("leagueId")));
+        this.predictionService.setName(localStorage.getItem("name"));
+
+        this.name = this.predictionService.getName();
+        this.leagueId = this.predictionService.getLeagueId();
+        this.league = this.predictionService.getLeague(this.leagueId-1);
+
+        if(localStorage.getItem("table")){
+          this.table = JSON.parse(localStorage.getItem("table"));
+          this.predictionService.setPredictedTable([...this.table])
+        }
+        else{
+          this.table = this.predictionService.getPredictedTable();
+        }
+
+      }
+
     }
+
+    else{
+      this.name = this.predictionService.getName();
+      this.leagueId = this.predictionService.getLeagueId();
+      this.league = this.predictionService.getLeague(this.leagueId-1);
+      this.table = this.predictionService.getPredictedTable();
+     }
 
     this.isDownloading = 0;
     this.date = new Date();
-    this.leagueId = this.predictionService.getLeagueId();
-    this.league = this.predictionService.getLeague(this.leagueId-1);
-    this.table = this.predictionService.getPredictedTable();
   }
 
  async download(){
@@ -51,6 +79,7 @@ export class DownloadComponent implements OnInit {
 
 
   ngOnInit(): void {
+
   }
 
 }

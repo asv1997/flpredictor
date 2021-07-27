@@ -17,15 +17,41 @@ export class PredictTableComponent implements OnInit {
   constructor(private predictionService: PredictionService, private router : Router) {
     let nameCheck = this.predictionService.getName();
 
-    //to ensure that the user cant directly access the page without using the choose-league component
+    //to ensure that the user cant directly access the page without choosing the name and a league
     if(nameCheck==="" || nameCheck.length ==0){
-      router.navigateByUrl("/")
+
+      if(localStorage.length == 0){
+        router.navigateByUrl("/")
+      }
+      else{
+
+         //retrieving info from browser local storage
+
+
+        this.predictionService.setLeagueId(parseInt(localStorage.getItem("leagueId")));
+        this.predictionService.setName(localStorage.getItem("name"));
+
+        this.leagueId = this.predictionService.getLeagueId();
+        this.league = this.predictionService.getLeague(this.leagueId-1);
+
+        if(localStorage.getItem("table")){
+          this.table = JSON.parse(localStorage.getItem("table"))
+        }
+        else{
+          this.table = this.predictionService.getPredictedTable();
+        }
+
+      }
+
     }
 
-    this.leagueId = this.predictionService.getLeagueId();
-    this.league = this.predictionService.getLeague(this.leagueId-1);
-    this.table = this.predictionService.getPredictedTable();
-    console.log(this.table)
+    else{
+      this.leagueId = this.predictionService.getLeagueId();
+      this.league = this.predictionService.getLeague(this.leagueId-1);
+      this.table = this.predictionService.getPredictedTable();
+     }
+
+
   }
 
   ngOnInit(): void {
@@ -33,6 +59,7 @@ export class PredictTableComponent implements OnInit {
 
   drop(event: CdkDragDrop<any[]>){
     moveItemInArray(this.table,event.previousIndex,event.currentIndex);
+    localStorage.setItem("table",JSON.stringify(this.table))
     }
 
   submit(){

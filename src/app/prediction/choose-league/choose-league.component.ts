@@ -15,6 +15,10 @@ export class ChooseLeagueComponent implements OnInit {
   displayErrorText:boolean;
 
   constructor(private predictionService:PredictionService, private router:Router) {
+
+    //clearing the browser local storage
+    localStorage.clear();
+
      this.league = predictionService.getLeagueId();
      this.name = predictionService.getName();
      this.leagues = predictionService.getLeagues();
@@ -34,6 +38,10 @@ export class ChooseLeagueComponent implements OnInit {
     if(temp.length!==0){
       this.predictionService.setName(this.name);
       this.predictionService.setLeagueId(this.league);
+
+      localStorage.setItem("name",this.name)
+      localStorage.setItem("leagueId",this.league.toString());
+
       this.router.navigateByUrl("/prediction/predict")
     }
     else{
