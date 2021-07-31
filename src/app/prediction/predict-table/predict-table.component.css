@@ -91,6 +91,7 @@ h5{
   padding-bottom: 10px;
   border-bottom: 1px solid gray;
   margin-bottom: 14px;
+  cursor: pointer;
 }
 
 .table-column-team{

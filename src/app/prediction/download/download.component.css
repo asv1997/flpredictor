@@ -69,8 +69,9 @@ h5{
    min-height: 400px;
    width: 90%;
    padding: 20px 10px 10px 20px;
-   background-color: #FF3CAC;
-   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+   background-image: linear-gradient(to right bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(../../../assets/images/d-bg-2.png);
+   background-size: cover;
+   background-position: center;
    border-radius: 20px;
  }
 

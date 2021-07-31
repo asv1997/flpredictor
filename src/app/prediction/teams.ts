@@ -19,7 +19,7 @@ const teams = [
     },
     {
       id: 105,
-      name: "Bunrley"
+      name: "Burnley"
     },
     {
       id: 106,
