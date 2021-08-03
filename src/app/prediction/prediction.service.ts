@@ -25,8 +25,21 @@ export class PredictionService {
       {
         leagueName: "Italian League",
         leagueId: 3
+      },
+      {
+        leagueName: "German League",
+        leagueId: 4
+      },
+      {
+        leagueName: "French League",
+        leagueId: 5
       }
-    ]
+      ,
+      {
+        leagueName: "English League - Div 2",
+        leagueId: 6
+      }
+     ]
 
     this.name = "";
     this.leagueId = 1; //english league is set as default league

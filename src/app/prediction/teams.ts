@@ -252,6 +252,269 @@ const teams = [
       name: "Venezia"
     }
 
+  ],
+
+  //German League
+  [
+    {
+      id: 401,
+      name: "Atalanta"
+    },
+    {
+      id: 402,
+      name: "Augsburg"
+    },
+    {
+      id: 403,
+      name: "Leverkusen"
+    },
+    {
+      id: 404,
+      name: "Bayern"
+    },
+    {
+      id: 405,
+      name: "VfL Bochum"
+    },
+    {
+      id: 406,
+      name: "Dortmund"
+    },
+    {
+      id: 407,
+      name: "Mönchengladbach"
+    },
+    {
+      id: 408,
+      name: "Eintracht Frankfurt"
+    },
+    {
+      id: 409,
+      name: "Köln"
+    },
+    {
+      id: 410,
+      name: "SC Freiburg"
+    },
+    {
+      id: 411,
+      name: "Fürth"
+    },
+    {
+      id: 412,
+      name: "Hertha"
+    },
+    {
+      id: 413,
+      name: "Hoffenheim"
+    },
+    {
+      id: 414,
+      name: "Mainz"
+    },
+    {
+      id: 415,
+      name: "RB Leipzig"
+    },
+    {
+      id: 416,
+      name: "VfB Stuttgart"
+    },
+    {
+      id: 417,
+      name: "Union Berlin"
+    },
+    {
+      id: 418,
+      name: "Wolfsburg"
+    }
+  ]
+  ,
+
+  //French League
+  [
+    {
+      id: 501,
+      name: "Angers"
+    },
+    {
+      id: 502,
+      name: "Bordeaux"
+    },
+    {
+      id: 503,
+      name: "Brest"
+    },
+    {
+      id: 504,
+      name: "Clermont Foot"
+    },
+    {
+      id: 505,
+      name: "Lens"
+    },
+    {
+      id: 506,
+      name: "Lille"
+    },
+    {
+      id: 507,
+      name: "Lorient"
+    },
+    {
+      id: 508,
+      name: "Lyon"
+    },
+    {
+      id: 509,
+      name: "Marseille"
+    },
+    {
+      id: 510,
+      name: "Metz"
+    },
+    {
+      id: 511,
+      name: "Monaco"
+    },
+    {
+      id: 512,
+      name: "Montpellier"
+    },
+    {
+      id: 513,
+      name: "Nantes"
+    },
+    {
+      id: 514,
+      name: "Nice"
+    },
+    {
+      id: 515,
+      name: "PSG"
+    },
+    {
+      id: 516,
+      name: "Reims"
+    },
+    {
+      id: 517,
+      name: "Rennes"
+    },
+    {
+      id: 518,
+      name: "St-Étienne"
+    },
+    {
+      id: 519,
+      name: "Strasbourg"
+    },
+    {
+      id: 520,
+      name: "Troyes"
+    }
+
+  ],
+
+  //English League - div2
+  [
+    {
+      id: 601,
+      name: "Bournemouth"
+    },
+    {
+      id: 602,
+      name: "Barnsley"
+    },
+    {
+      id: 603,
+      name: "Birmingham"
+    },
+    {
+      id: 604,
+      name: "Blackburn"
+    },
+    {
+      id: 605,
+      name: "Blackpool"
+    },
+    {
+      id: 606,
+      name: "Bristol"
+    },
+    {
+      id: 607,
+      name: "Cardiff"
+    },
+    {
+      id: 608,
+      name: "Coventry"
+    },
+    {
+      id: 609,
+      name: "Derby"
+    },
+    {
+      id: 610,
+      name: "Fulham"
+    },
+    {
+      id: 611,
+      name: "Huddersfield"
+    },
+    {
+      id: 612,
+      name: "Hull"
+    },
+    {
+      id: 613,
+      name: "Luton"
+    },
+    {
+      id: 614,
+      name: "Middlesbrough"
+    },
+    {
+      id: 615,
+      name: "Millwall"
+    },
+    {
+      id: 616,
+      name: "Nottingham"
+    },
+    {
+      id: 617,
+      name: "Peterborough"
+    },
+    {
+      id: 618,
+      name: "Preston"
+    },
+    {
+      id: 619,
+      name: "QPR"
+    },
+    {
+      id: 620,
+      name: "Reading"
+    },
+    {
+      id: 621,
+      name: "Sheffield United"
+    },
+    {
+      id: 622,
+      name: "Stoke"
+    },
+    {
+      id: 623,
+      name: "Swansea"
+    },
+    {
+      id: 624,
+      name: "West Brom"
+    }
+
   ]
 
 
