@@ -258,7 +258,7 @@ const teams = [
   [
     {
       id: 401,
-      name: "Atalanta"
+      name: "Arminia"
     },
     {
       id: 402,
